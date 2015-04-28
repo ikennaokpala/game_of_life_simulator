@@ -1,6 +1,6 @@
 class Simulator
 
-  def initialize(arg)
+  def initialize(seating_arrangement)
     raise NotImplementedError
   end
 

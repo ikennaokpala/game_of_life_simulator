@@ -10,9 +10,9 @@ The app must run on:
  
 You are going to create a Gif pronounciation simulator. To do so, please implement the following methods
 
-### Simulator#initialize(args)
+### Simulator#initialize(seating_arrangement)
 
-- `arg` is an array of array which represent the people in the initial seating arrangement
+- `seating_arrangement` is an array of array which represents the people in the initial seating arrangement
 
 - Each element in the inner array is one of: `:hard`, `:soft`, or `:none`
 
