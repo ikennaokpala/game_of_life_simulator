@@ -32,4 +32,14 @@ describe Opinion do
       end
     end
   end
+
+  describe "#neighbours" do
+    it "returns number of hard or soft opinions" do
+      expect(Opinion.new(opinion, neighbours).neighbours).to eq(2)
+    end
+
+    it "returns number of opinions that are not hard or soft" do
+      expect(Opinion.new(:none, neighbours).neighbours).to eq(2)
+    end
+  end
 end
