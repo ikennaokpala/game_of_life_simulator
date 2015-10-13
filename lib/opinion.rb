@@ -1,4 +1,5 @@
 class Opinion
+  
 	attr_accessor :stance
 	def initialize(stance, neighbours)
 		@stance    = stance
