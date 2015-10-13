@@ -1,3 +1,4 @@
+require "rules/base"
 require "rules/hard"
 require "rules/soft"
 require "rules/less_than_two"
