@@ -1,19 +1,29 @@
+require "rules"
+
 class Simulator
 
   def initialize(seating_arrangement)
-    raise NotImplementedError
+    @seating_arrangement = seating_arrangement
   end
 
   def verdict
-    raise NotImplementedError
+    Verdict.new(@seating_arrangement).outcome
   end
 
   def state
-    raise NotImplementedError
+    @seating_arrangement
   end
 
   def next
-    raise NotImplementedError
+    @seating_arrangement = @seating_arrangement.each_with_index.map do |row,row_index|
+      row.each_with_index.map do |column,column_index|
+        Rules.validate(column, neighbour.find(row_index, column_index))
+      end
+    end
   end
 
+protected
+  def neighbour
+    Neighbour.new(@seating_arrangement)
+  end
 end
