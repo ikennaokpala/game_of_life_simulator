@@ -8,3 +8,4 @@ SEATING_ARRANGEMENT = [
 
 require 'simulator'
 require 'neighbour'
+require 'verdict'
