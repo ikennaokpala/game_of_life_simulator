@@ -1,12 +1,8 @@
 require "opinion"
 
 module Rules
-  class Drowned
-
-    def initialize(opinion, neighbours)
-      @opinion = Opinion.new(opinion, neighbours)
-    end
-
+  class Drowned < Base
+    
     def apply
       if @opinion.valid?
         opinionated_neighbours = @opinion.neighbours
