@@ -17,49 +17,49 @@ class Neighbour
   end
 
   def south(x, y)
-    if(x < @seating_arrangement.length - 1)
+    if x < @seating_arrangement.length - 1
       @seating_arrangement[x + 1][y]
     end
   end
 
   def south_west(x, y)
-    if(x < @seating_arrangement.length - 1 && y > 0)
+    if x < (@seating_arrangement.length - 1) && y > 0
       @seating_arrangement[x + 1][y - 1]
     end
   end
 
   def south_east(x, y)
-    if(x < @seating_arrangement.length - 1 && y < @seating_arrangement[0].length - 1)
+    if x < (@seating_arrangement.length - 1) && y < @seating_arrangement.first.length - 1
       @seating_arrangement[x + 1][y + 1]
     end
   end
 
   def east(x, y)
-    if(y < @seating_arrangement[0].length - 1)
+    if y < @seating_arrangement.first.length - 1
       @seating_arrangement[x][y + 1]
     end
   end
 
   def west(x, y)
-    if(y > 0)
+    if y > 0
       @seating_arrangement[x][y - 1]
     end
   end
 
   def north(x, y)
-    if(x > 0)
+    if x > 0
       @seating_arrangement[x - 1][y]
     end
   end
 
   def north_west(x, y)
-    if(x > 0 && y > 0)
+    if x > 0 && y > 0
       @seating_arrangement[x - 1][y - 1]
     end
   end
 
   def north_east(x, y)
-    if(x > 0 && y < @seating_arrangement[0].length - 1)
+    if x > 0 && y < @seating_arrangement.first.length - 1
       @seating_arrangement[x - 1][y + 1]
     end
   end

@@ -1,5 +1,3 @@
-# Clio Hiring Project
-
 ## Environment Requirements
 
 The app must run on:
