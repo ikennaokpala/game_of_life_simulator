@@ -7,17 +7,14 @@ The app must run on:
 - You will need to install `bundler` and do a `bundle install` in the directory to get the required gems installed
 
 ## Task
-
 You are going to create a Gif pronunciation simulator. To do so, please implement the following methods:
 
 ### Simulator#initialize(seating_arrangement)
-
 - `seating_arrangement` is an array of array which represents the people in the initial seating arrangement
 
 - Each element in the inner array is one of: `:hard`, `:soft`, or `:none`
 
 ### Simulator#verdict
-
 - If the majority of opinionated people think it is a hard g it returns `:hard`
 
 - If the majority of opinionated people think it is a soft g it returns `:soft`
@@ -25,17 +22,14 @@ You are going to create a Gif pronunciation simulator. To do so, please implemen
 - If the opinions are equal then return :push
 
 ### Simulator#state
-
 - Returns an array of arrays that represents the people in the current seating arrangement
 
 - Each element in the inner array is one of: `:hard`, `:soft`, or `:none`
 
 ### Simulator#next
-
 - Updates the opinions of all of the people in the seating arrangement based on the rules below
 
 #### Rules
-
 - If a person with an opinion has fewer than 2 opinionated neighbours then they stop having an opinion since there are not enough people to argue with.
 
 - If a person with an opinion has more than 3 opinionated neighbours then they stop having an opinion since their opinion is drowned out by their neighbours.
@@ -52,7 +46,6 @@ You are going to create a Gif pronunciation simulator. To do so, please implemen
 - All state transitions happen simultaneously
 
 ## Tests
-
 - There is a spec (`spec/simulator_spec.rb`) that outlines some basic scenarios to help you get started. We'd love it if you added some more tests.
 
 - This can be run via `bundle exec rspec spec/simulator_spec.rb`
