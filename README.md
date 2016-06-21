@@ -1,7 +1,6 @@
 ## Environment Requirements
 
 The app must run on:
-
 - Ruby >= 2.2.2
  - Feel free to upgrade the ruby version located in `Gemfile` if you want.
 - You will need to install `bundler` and do a `bundle install` in the directory to get the required gems installed
@@ -11,7 +10,6 @@ You are going to create a Gif pronunciation simulator. To do so, please implemen
 
 ### Simulator#initialize(seating_arrangement)
 - `seating_arrangement` is an array of array which represents the people in the initial seating arrangement
-
 - Each element in the inner array is one of: `:hard`, `:soft`, or `:none`
 
 ### Simulator#verdict
